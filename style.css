@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4ea9cc;
+    font-family: "Manrope", sans-serif;
+}
+
+h2 {
+    margin: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header form {
+    width: 50%;
+}
+
+.search_result {
+    display: block;
+    height: auto;
+    padding: 20px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 0.5rem;
+}
+
+.form_group {
+    margin: 1rem 0;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.625rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    font-family: inherit;
+    background-color: #035a7c;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    margin: 1rem 0 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #02485e;
+}
+
+button.delete {
+    background-color: transparent;
+    color: #0a5c7c;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    margin: 0;
+}
+
+button.delete:hover {
+    color: #02485e;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input {
+    flex: 1;
+    margin: 1rem 0.5rem 1rem 1rem;
+}
+
+.output {
+    flex: 2;
+    margin: 1rem 1rem 1rem 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    word-break: break-all;
+}
+
+th {
+    font-weight: bold;
+    background-color: #4ea9cc;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+#message {
+    margin-top: 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+}
+
+#message.success {
+    background-color: #4caf50;
+    color: white;
+    visibility: visible;
+}
+
+#message.error {
+    background-color: #f44336;
+    color: white;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    label {
+        width: 100%;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
